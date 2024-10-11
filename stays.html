@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Browse unique stays available at Airbnb.">
+    <title>Our stay - Airbnb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav {
+            background-color: #333333;
+            color: rgb(231, 222, 222);
+            padding: 20px;
+            text-shadow: 0 7px 15px rgb(252, 0, 0);
+            text-align: center;
+            box-shadow: #000000;
+            display: flex;
+            justify-content:  space-around;
+        }
+
+        nav a {
+            color:white;
+                text-decoration: none;
+                border-radius: 25px;
+                text-size-adjust: 25px;
+                box-shadow: 0 7px 15px rgb(0, 0, 0);
+                padding: 20px;
+        }
+        .logo {
+    max-height: 50px;
+}
+
+.nav-logo {
+    max-height: 50px;
+    background-color: #000000;
+            border-radius: 25px;
+            box-sizing: border-box;
+            box-shadow: 0 7px 15px rgb(255, 251, 0);
+            transform:scale(1.25);
+}
+.nav-logo:hover{
+    background-color: #000000;
+            border-radius: 25px;
+            box-sizing: border-box;
+            box-shadow: 0 7px 15px rgb(255, 255, 253);
+            transform:scale(2.25);
+
+}
+
+        nav a:hover {
+            background-color: #000000;
+            box-sizing: border-box;
+            box-shadow: 0 7px 15px rgb(216, 240, 3);
+            padding: 20px;
+            border-radius: 25px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            padding: 20px;
+            justify-items: center; 
+        }
+
+      
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgb(231, 7, 7);
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    background-color: #e74444;
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 12px rgba(153, 58, 58, 0.8); 
+}
+button {
+    background-color: #e76316;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff0303; 
+    transform: scale(1.1); 
+    border-radius: 5px; 
+}
+
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #e21c23;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e76316;
+            transform: scale(1.05);
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Stays</h1>
+    </header>
+    <nav>
+        <img src="images/logo2.webp" alt="Airbnb Logo" class="logo nav-logo">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login or Signup</a>
+    </nav>
+    <section>
+        <h2>Featured Stays</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/new4.jpg" alt="Cozy Mountain Cabin">
+                <h3>Cozy Mountain Cabin</h3>
+                <p>Serene retreat in nature.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/new5.jpg" alt="Artistic Haven">
+                <h3>Artistic Haven</h3>
+                <p>Immerse yourself in creativity in this artsy space, filled with local artwork and vibrant decor.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/new7.jpg" alt="Modern City Loft">
+                <h3>Modern City Loft</h3>
+                <p>Luxury in the city center.</p>
+                <button>Book Now</button>
+            </div>
+            </div>
+            <div class="card-container">
+            <div class="card">
+                <img src="images/new1.jpg" alt="Modern Loft">
+                <h3>Modern Loft</h3>
+                <p>Enjoy contemporary comfort in this chic loft, featuring spacious interiors and vibrant city life at your doorstep.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/new3.jpg" alt="Family-Friendly Villa">
+                <h3>Family-Friendly Villa</h3>
+                <p>Ideal for families, this villa features multiple bedrooms, a game room, and a backyard for kids to play.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/newhome.jpg" alt="Eco-Friendly Retreat">
+                <h3>Eco-Friendly Retreat</h3>
+                <p>Stay sustainably in this eco-conscious home, featuring solar energy and organic gardens.</p>
+                <button>Book Now</button>
+            </div>
+            </div>
+        <div class="card-container">
+               <div class="card">
+                        <img src="images/newfamilhuz.jpg" alt="Hidden Forest Cottage">
+                        <h3>Hidden Forest Cottage</h3>
+                        <p>Escape to tranquility in this charming cottage nestled in a secluded forest. Wake up to the sounds of nature, 
+                            enjoy a cozy fire under the stars, and recharge in this serene woodland retreat.
+                            Perfect for couples looking for a romantic getaway or solo travelers seeking peace and quiet.</p>
+                        <button>Book Now</button>
+               </div>
+            <div class="card">
+                    <img src="images/new4.jpg" alt="Oceanfront Paradise Villa">
+                    <h3>Oceanfront Paradise villa</h3>
+                    <p>Experience beachfront luxury in this stunning villa with panoramic views of the Atlantic Ocean. With a private infinity pool, modern decor, and direct beach access, it's the ideal destination for those seeking a blend of comfort and adventure. Watch the sun set into the ocean as you relax in your personal slice of paradise.</p>
+                    <button>Book Now</button>
+            </div>
+            <div class="card">
+                <img src="images/fb.jpg" alt="Urban Loft Retreat">
+                <h3>Urban Loft Retreat</h3>
+                <p>Step into the heart of the city in this chic, modern loft designed for comfort and style. Featuring large windows with sweeping city views, contemporary decor, and a vibrant neighborhood just steps away, it's perfect for travelers who love the buzz of urban life. Ideal for couples or business travelers looking for a stylish escape</p>
+                <button>Book Now</button>
+        </div>
+
+        </div>
+        <div class="card-container">
+            <div class="card">
+                     <img src="images/cat1.jpg" alt="Cultural Homestay Experience">
+                     <h3>Cultural Homestay Experience</h3>
+                     <p>Immerse yourself in Cameroonian culture with a homestay in Poe. Stay with a local family,
+                         participate in traditional activities, 
+                        and savor authentic cuisine for a truly immersive and enriching experience.</p>
+                     <button>Book Now</button>
+            </div>
+         <div class="card">
+                 <img src="images/cat2.jpg" alt="Riverside Eco-Cabin">
+                 <h3>Riverside Eco-Cabin</h3>
+                 <p>Embrace sustainable living in this eco-friendly cabin by the riverside in Cameroon.
+                     Experience off-grid tranquility with solar power and water sourced from the nearby river, perfect for nature lovers seeking a unique stay.</p>
+                 <button>Book Now</button>
+         </div>
+         <div class="card">
+             <img src="images/cat3.jpg" alt="Tranquil Rainforest Bungalow">
+             <h3>Tranquil Rainforest Bungalow</h3>
+             <p>Tranquil Rainforest Bungalow
+                Nestled in the lush rainforest of Poe, this charming bungalow offers a peaceful retreat surrounded by nature.
+                 Wake up to the sound of birds chirping and enjoy a serene stay away from the hustle and bustle of the city.</p>
+             <button>Book Now</button>
+     </div>
+     </div>
+     <div class="card-container">
+        <div class="card">
+                 <img src="images/cat6.jpg" alt="Cultural Homestay Experience">
+                 <h3>Cultural Homestay Experience</h3>
+                 <p>Immerse yourself in Cameroonian culture with a homestay in Poe. Stay with a local family,
+                     participate in traditional activities, 
+                    and savor authentic cuisine for a truly immersive and enriching experience.</p>
+                 <button>Book Now</button>
+        </div>
+     <div class="card">
+             <img src="images/cat7.jpg" alt="Riverside Eco-Cabin">
+             <h3>Riverside Eco-Cabin</h3>
+             <p>Embrace sustainable living in this eco-friendly cabin by the riverside in Cameroon.
+                 Experience off-grid tranquility with solar power and water sourced from the nearby river, perfect for nature lovers seeking a unique stay.</p>
+             <button>Book Now</button>
+     </div>
+     <div class="card">
+         <img src="images/cat8.jpg" alt="Tranquil Rainforest Bungalow">
+         <h3>Tranquil Rainforest Bungalow</h3>
+         <p>Tranquil Rainforest Bungalow
+            Nestled in the lush rainforest of Poe, this charming bungalow offers a peaceful retreat surrounded by nature.
+             Wake up to the sound of birds chirping and enjoy a serene stay away from the hustle and bustle of the city.</p>
+         <button>Book Now</button>
+ </div>
+ </div>
+    </section>
+</body>
+</html>
